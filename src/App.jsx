@@ -539,7 +539,7 @@ export default function App() {
           <header className="flex items-end justify-between pb-3 mb-2" style={{borderBottom:'2px solid #1f1812'}}>
             <div>
               <div className="text-xs mono uppercase tracking-widest" style={{color:'#8b2635'}}>
-                Department of Internal Medicine · Teaching File
+                 Wayne State School of Medicine · Teaching File
               </div>
               <h1 className="display text-5xl mt-1" style={{color:'#1f1812'}}>
                 Differential <span style={{color:'#8b2635'}}>·</span> Immunodeficiency
