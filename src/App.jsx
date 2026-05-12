@@ -2973,12 +2973,12 @@ const MODES = [
   },
   {
     id:'heme',
-    name:'Leukemias & Lymphomas',
-    blurb:'Hematologic malignancies — acute & chronic leukemias (AML, ALL, CML, CLL, hairy cell), Hodgkin & non-Hodgkin lymphomas (Burkitt, DLBCL, follicular, mantle, MALT), multiple myeloma, polycythemia vera vs secondary erythrocytosis, ATLL, mycosis fungoides.',
+    name:'Leukemias and Lymphomas',
+    blurb:'Hematologic malignancies — acute and chronic leukemias (AML, ALL, CML, CLL, hairy cell), Hodgkin and non-Hodgkin lymphomas (Burkitt, DLBCL, follicular, mantle, MALT), multiple myeloma, polycythemia vera vs secondary erythrocytosis, ATLL, mycosis fungoides.',
     syndromes: SYNDROMES_HEME,
     pmhPool: ADULT_PMH,
     shxPool: ADULT_SHX,
-    headerLabel:'Leukemias & Lymphomas',
+    headerLabel:'Leukemias and Lymphomas',
     fallbacks:{
       diagnosis: FALLBACK_DIAGNOSIS_HEME,
       defect: FALLBACK_DEFECT_HEME,
