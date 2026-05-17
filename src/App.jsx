@@ -5,6 +5,7 @@ import { fmtLab, LAB_LABELS, SPECIAL_LABEL, SPECIAL_UNIT, capitalize } from './d
 import { ModePicker } from './components/ModePicker.jsx';
 import { Section } from './components/Section.jsx';
 import { Vital } from './components/Vital.jsx';
+import { LysosomalQuiz } from './components/LysosomalQuiz.jsx';
 
 // =========================================================================
 // GLOBAL STYLES
@@ -44,13 +45,14 @@ export default function App() {
   const mode = MODES.find(m => m.id === modeId);
 
   const startMode = (id) => {
-    const m = MODES.find(x => x.id === id);
     setModeId(id);
-    setRound(generateRound(m));
     setSelected(null);
     setRevealed(false);
     setScore({ right:0, wrong:0 });
     setShowRef(false);
+    if (id === 'lysosomal') { setRound(null); return; }
+    const m = MODES.find(x => x.id === id);
+    setRound(generateRound(m));
   };
 
   const goHome = () => {
@@ -61,7 +63,26 @@ export default function App() {
   };
 
   // Mode picker view
-  if (!modeId || !round) {
+  if (!modeId) {
+    return (
+      <>
+        {styles}
+        <ModePicker onPick={startMode} />
+      </>
+    );
+  }
+
+  // Lysosomal diagram quiz (standalone, no round needed)
+  if (modeId === 'lysosomal') {
+    return (
+      <>
+        {styles}
+        <LysosomalQuiz onGoHome={goHome} />
+      </>
+    );
+  }
+
+  if (!round) {
     return (
       <>
         {styles}
