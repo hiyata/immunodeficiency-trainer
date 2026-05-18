@@ -1,14 +1,14 @@
 import { useMemo, useState } from 'react';
 
 const allOptions = {
-  product: ["GM₁", "GM₂", "Glucocerebroside", "Ceramide trihexoside", "Sulfatides", "Galactocerebroside", "Ceramide", "Sphingomyelin"],
+  product: ["GM₂", "GM₃", "Glucocerebroside", "Ceramide trihexoside", "Sulfatides", "Galactocerebroside", "Ceramide", "Sphingomyelin"],
   enzyme:  ["Hexosaminidase A", "α-galactosidase A", "Arylsulfatase A", "Glucocerebrosidase", "Galactocerebrosidase", "Sphingomyelinase"],
   disease: ["Tay-Sachs disease", "Fabry disease", "Metachromatic leukodystrophy", "Gaucher disease", "Krabbe disease", "Niemann-Pick disease"],
 };
 
 const targets = [
-  { type:"product", answer:"GM₁",                  x:90,   y:214, w:115, h:62 },
-  { type:"product", answer:"GM₂",                  x:480,  y:214, w:120, h:62 },
+  { type:"product", answer:"GM₂",                  x:90,   y:214, w:115, h:62 },
+  { type:"product", answer:"GM₃",                  x:480,  y:214, w:120, h:62 },
   { type:"product", answer:"Glucocerebroside",      x:620,  y:430, w:345, h:70 },
   { type:"product", answer:"Ceramide trihexoside",  x:1020, y:214, w:360, h:70 },
   { type:"product", answer:"Sulfatides",            x:110,  y:430, w:220, h:70 },
@@ -88,8 +88,8 @@ function Diagram({ target, showAnswer }) {
           <line x1="1180" y1="782" x2="930" y2="782" />
         </g>
 
-        <text x="112" y="248" fontSize="40" fontWeight="900">GM₁</text>
-        <text x="485" y="248" fontSize="40" fontWeight="900">GM₂</text>
+        <text x="112" y="248" fontSize="40" fontWeight="900">GM₂</text>
+        <text x="485" y="248" fontSize="40" fontWeight="900">GM₃</text>
         <text x="638" y="470" fontSize="39" fontWeight="900">Glucocerebroside</text>
         <text x="1030" y="248" fontSize="39" fontWeight="900">Ceramide trihexoside</text>
         <text x="116" y="467" fontSize="39" fontWeight="900">Sulfatides</text>
