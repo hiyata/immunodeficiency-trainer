@@ -44,32 +44,32 @@ export function buildInheritanceQ(syndrome) {
     'X-linked dominant',
     'Autosomal recessive',
     'Autosomal dominant',
-    'Microdeletion (de novo)',
-    'Meiotic nondisjunction (sporadic, maternal-age related)',
+    'De novo microdeletion',
+    'Meiotic nondisjunction',
     'Robertsonian translocation',
-    'Genomic imprinting — deletion of the maternally-derived 15q11-q13 region',
-    'Genomic imprinting — deletion of the paternally-derived 15q11-q13 region',
-    'Sex chromosome monosomy (loss of an X chromosome)',
-    'Acquired somatic mutation in a clonal hematopoietic stem-cell population (not inherited)',
-    'Acquired clonal expansion driven by an oncogenic viral infection',
-    'Reactive process secondary to a non-neoplastic stimulus (no clonal mutation)',
+    'Maternal 15q11-q13 deletion',
+    'Paternal 15q11-q13 deletion',
+    'Sex chromosome monosomy',
+    'Acquired somatic mutation',
+    'Viral oncogenic clonal expansion',
+    'Reactive process',
     'Sporadic / unknown'
   ];
   const t = syndrome.inheritance.toLowerCase();
   const correctLabel =
-    (t.includes('deletion of the maternal') || t.includes('maternal 15q')) ? 'Genomic imprinting — deletion of the maternally-derived 15q11-q13 region' :
-    (t.includes('deletion of the paternal') || t.includes('paternal 15q')) ? 'Genomic imprinting — deletion of the paternally-derived 15q11-q13 region' :
-    (t.includes('monosomy') || t.includes('45,x')) ? 'Sex chromosome monosomy (loss of an X chromosome)' :
+    (t.includes('deletion of the maternal') || t.includes('maternal 15q')) ? 'Maternal 15q11-q13 deletion' :
+    (t.includes('deletion of the paternal') || t.includes('paternal 15q')) ? 'Paternal 15q11-q13 deletion' :
+    (t.includes('monosomy') || t.includes('45,x')) ? 'Sex chromosome monosomy' :
     t.includes('x-linked dominant') ? 'X-linked dominant' :
     t.includes('x-linked') ? 'X-linked recessive' :
     t.includes('autosomal recessive') ? 'Autosomal recessive' :
     t.includes('autosomal dominant') ? 'Autosomal dominant' :
-    t.includes('meiotic nondisjunction') ? 'Meiotic nondisjunction (sporadic, maternal-age related)' :
+    t.includes('meiotic nondisjunction') ? 'Meiotic nondisjunction' :
     t.includes('robertsonian') ? 'Robertsonian translocation' :
-    t.includes('microdeletion') ? 'Microdeletion (de novo)' :
-    (t.includes('viral') || t.includes('htlv') || t.includes('ebv-driven')) ? 'Acquired clonal expansion driven by an oncogenic viral infection' :
-    (t.includes('reactive') || t.includes('secondary to')) ? 'Reactive process secondary to a non-neoplastic stimulus (no clonal mutation)' :
-    (t.includes('somatic') || t.includes('acquired') || t.includes('clonal')) ? 'Acquired somatic mutation in a clonal hematopoietic stem-cell population (not inherited)' :
+    t.includes('microdeletion') ? 'De novo microdeletion' :
+    (t.includes('viral') || t.includes('htlv') || t.includes('ebv-driven')) ? 'Viral oncogenic clonal expansion' :
+    (t.includes('reactive') || t.includes('secondary to')) ? 'Reactive process' :
+    (t.includes('somatic') || t.includes('acquired') || t.includes('clonal')) ? 'Acquired somatic mutation' :
     'Sporadic / unknown';
   const distractorPool = labels.filter(l => l !== correctLabel);
   const distractors = pick(distractorPool, 4);

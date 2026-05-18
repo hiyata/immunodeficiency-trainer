@@ -15,7 +15,7 @@ export const SYNDROMES_TRINUCLEOTIDE = [
   {
     id:'huntington', name:'Huntington Disease', short:'Huntington', category:'Polyglutamine Disorder',
     sex:'any', ageMin:32, ageMax:55,
-    defect:'CAG repeat expansion in HTT (4p16.3) — polyglutamine gain-of-function; caudate GABAergic neuron loss',
+    defect:'CAG repeat in HTT',
     inheritance:'Autosomal dominant trinucleotide (CAG) repeat expansion in the HTT gene on chromosome 4p; exhibits anticipation that is more pronounced with paternal transmission because the largest expansions occur during spermatogenesis',
     mechanism:'Expanded CAG repeats (≥40 in fully penetrant alleles; 36–39 reduced penetrance) encode a polyglutamine tract in huntingtin that misfolds and aggregates with toxic gain-of-function. Loss of GABAergic medium spiny neurons in the striatum produces caudate atrophy on neuroimaging.',
     diagnosticTest:'PCR sizing of CAG trinucleotide repeat in the HTT gene',
@@ -23,13 +23,13 @@ export const SYNDROMES_TRINUCLEOTIDE = [
     organismOptions:[],
     keyCardiac:'',
     cardiacOptions:[],
-    keyComplication:'Caudate nucleus atrophy with ex vacuo frontal horn dilation on neuroimaging',
+    keyComplication:'Caudate nucleus atrophy on neuroimaging',
     complicationOptions:[
-      'Caudate nucleus atrophy with ex vacuo frontal horn dilation on neuroimaging',
-      'Concentric hypertrophic cardiomyopathy on echocardiography',
-      'Bilateral posterior subcapsular iridescent cataracts on slit-lamp examination',
-      'Macroorchidism developing after the onset of puberty',
-      'Diffuse cerebellar and pontine atrophy with sparing of the basal ganglia on MRI'
+      'Caudate nucleus atrophy on neuroimaging',
+      'Concentric hypertrophic cardiomyopathy',
+      'Bilateral posterior subcapsular cataracts',
+      'Macroorchidism',
+      'Cerebellar and pontine atrophy on MRI'
     ],
     cc: () => rand([
       'middle-aged man presenting with involuntary jerking movements and progressive irritability of one year duration',
@@ -80,10 +80,10 @@ export const SYNDROMES_TRINUCLEOTIDE = [
     id:'friedreich', name:'Friedreich Ataxia', short:'Friedreich', category:'Recessive Ataxia',
     sex:'any', ageMin:9, ageMax:18,
     pmhPool: RH_PMH, shxPool: RH_SHX,
-    defect:'Biallelic GAA repeat expansion in FXN intron 1 (9q21) — frataxin deficiency, mitochondrial iron mishandling',
+    defect:'GAA repeat in FXN',
     inheritance:'Autosomal recessive trinucleotide (GAA) repeat expansion in both alleles of the FXN gene on chromosome 9q (a small subset of patients are compound heterozygous for a GAA expansion plus a point mutation)',
     mechanism:'Biallelic GAA expansion (typically 600–1200 repeats) impedes FXN transcription. Frataxin is a mitochondrial iron chaperone; its deficiency causes mitochondrial iron accumulation, Fe-S cluster dysfunction, and reactive-oxygen-species damage. Most affected: dorsal root ganglia, spinocerebellar/corticospinal tracts, dorsal columns, cardiomyocytes, and pancreatic β-cells.',
-    diagnosticTest:'Triplet-repeat-primed PCR for biallelic GAA expansion in FXN intron 1',
+    diagnosticTest:'PCR for GAA repeat in FXN',
     keyOrganism:'',
     organismOptions:[],
     keyCardiac:'Concentric hypertrophic cardiomyopathy (most common cause of death in Friedreich ataxia)',
@@ -94,13 +94,13 @@ export const SYNDROMES_TRINUCLEOTIDE = [
       'Atrial septal defect of the secundum type',
       'Progressive cardiac conduction disease with first-degree AV block'
     ],
-    keyComplication:'Insulin-dependent diabetes mellitus from β-cell oxidative damage (10–30% of patients)',
+    keyComplication:'Insulin-dependent diabetes from beta-cell damage',
     complicationOptions:[
-      'Insulin-dependent diabetes mellitus from β-cell oxidative damage (10–30% of patients)',
-      'Bilateral posterior subcapsular iridescent cataracts on slit-lamp examination',
-      'Markedly increased risk of acute lymphoblastic leukemia of childhood',
-      'Caudate atrophy with ex vacuo ventricular dilation on neuroimaging',
-      'Macroorchidism developing after the onset of puberty'
+      'Insulin-dependent diabetes from beta-cell damage',
+      'Bilateral posterior subcapsular cataracts',
+      'Increased risk of acute lymphoblastic leukemia',
+      'Caudate atrophy on neuroimaging',
+      'Macroorchidism'
     ],
     cc: () => rand([
       'adolescent presenting with progressive clumsiness and a wide-based gait',
@@ -151,27 +151,27 @@ export const SYNDROMES_TRINUCLEOTIDE = [
   {
     id:'myotonic', name:'Myotonic Dystrophy Type 1 (Steinert Disease)', short:'Myotonic Dystrophy', category:'Myotonic Myopathy',
     sex:'any', ageMin:25, ageMax:45,
-    defect:'CTG repeat expansion in DMPK 3\'UTR (19q13) — CUG RNA sequesters MBNL1 splicing factor; toxic mis-splicing',
+    defect:'CTG repeat in DMPK',
     inheritance:'Autosomal dominant trinucleotide (CTG) repeat expansion in the DMPK gene on chromosome 19q; exhibits anticipation, with the most dramatic intergenerational expansions occurring during maternal transmission (giving rise to the severe congenital form)',
     mechanism:'Expanded CUG-repeat RNA accumulates in nuclear foci and sequesters MBNL1, causing aberrant alternative splicing of the muscle chloride channel CLCN1 (myotonia), the insulin receptor (insulin resistance), and cardiac troponin T (conduction defects). DMPK haploinsufficiency may also contribute.',
-    diagnosticTest:'Triplet-repeat-primed PCR for CTG expansion in the DMPK gene (Southern blot for large expansions)',
+    diagnosticTest:'PCR for CTG repeat in DMPK',
     keyOrganism:'',
     organismOptions:[],
-    keyCardiac:'Progressive cardiac conduction disease (AV block → higher-degree blocks and ventricular arrhythmias)',
+    keyCardiac:'Progressive cardiac conduction disease',
     cardiacOptions:[
-      'Progressive cardiac conduction disease (AV block to ventricular arrhythmias)',
+      'Progressive cardiac conduction disease',
       'Concentric hypertrophic cardiomyopathy',
-      'Bicuspid aortic valve with preductal coarctation of the aorta',
-      'Complete atrioventricular septal defect',
-      'Aortic dissection from cystic medial necrosis of the ascending aorta'
+      'Bicuspid aortic valve with coarctation',
+      'Complete AV septal defect',
+      'Aortic dissection'
     ],
-    keyComplication:'Bilateral posterior subcapsular "Christmas-tree" cataracts (multicolored iridescent opacities)',
+    keyComplication:'Bilateral posterior subcapsular cataracts',
     complicationOptions:[
-      'Bilateral posterior subcapsular "Christmas-tree" cataracts',
-      'Concentric hypertrophic cardiomyopathy with left ventricular hypertrophy',
-      'Macroorchidism with normal testosterone and intact spermatogenesis',
-      'Caudate atrophy with ex vacuo ventricular dilation on neuroimaging',
-      'Severe early-childhood obesity from insatiable hyperphagia'
+      'Bilateral posterior subcapsular cataracts',
+      'Concentric hypertrophic cardiomyopathy',
+      'Macroorchidism',
+      'Caudate atrophy on neuroimaging',
+      'Severe childhood obesity from hyperphagia'
     ],
     cc: () => rand([
       'young adult with progressive difficulty releasing objects from her grip',
@@ -224,10 +224,10 @@ export const SYNDROMES_TRINUCLEOTIDE = [
     id:'fragilex', name:'Fragile X Syndrome', short:'Fragile X', category:'X-linked Trinucleotide Disorder',
     sex:'M', ageMin:6, ageMax:14,
     pmhPool: RH_PMH, shxPool: RH_SHX,
-    defect:'CGG repeat expansion in FMR1 5\'UTR (Xq27.3) — >200 repeats → methylation → FMRP loss at synapse',
+    defect:'CGG repeat in FMR1',
     inheritance:'X-linked dominant trinucleotide (CGG) repeat expansion in the FMR1 gene on Xq27.3; premutation alleles (55–200 repeats) typically expand to full mutation (>200) during maternal transmission. Females are affected but typically more mildly than males because of X-inactivation.',
     mechanism:'Full-mutation expansion (>200 CGG repeats) → hypermethylation of the FMR1 5\' UTR and promoter → transcriptional silencing of FMR1 → loss of FMRP at the synapse → impaired synaptic plasticity with downstream cognitive, behavioral, and somatic manifestations.',
-    diagnosticTest:'PCR for FMR1 CGG repeat number; Southern blot for methylation status with large expansions',
+    diagnosticTest:'PCR for FMR1 CGG repeat',
     keyOrganism:'',
     organismOptions:[],
     keyCardiac:'Mitral valve prolapse',
@@ -238,13 +238,13 @@ export const SYNDROMES_TRINUCLEOTIDE = [
       'Progressive first-degree atrioventricular block on serial ECGs',
       'Dilated cardiomyopathy with reduced ejection fraction'
     ],
-    keyComplication:'Macroorchidism (post-pubertal, normal pituitary-gonadal hormone levels)',
+    keyComplication:'Macroorchidism',
     complicationOptions:[
-      'Macroorchidism developing after puberty with normal hormone levels',
-      'Severe hypertrophic cardiomyopathy from frataxin deficiency',
-      'Aortic dissection in adulthood from cystic medial necrosis',
-      'Bilateral posterior subcapsular cataracts on slit-lamp examination',
-      'Early-onset Alzheimer disease before age 40 from APP gene overexpression'
+      'Macroorchidism',
+      'Hypertrophic cardiomyopathy',
+      'Aortic dissection',
+      'Bilateral posterior subcapsular cataracts',
+      'Early-onset Alzheimer disease'
     ],
     cc: () => rand([
       'school-age boy referred for evaluation of intellectual disability, hyperactivity, and autistic behaviors',
@@ -294,21 +294,21 @@ export const SYNDROMES_TRINUCLEOTIDE = [
   {
     id:'sca', name:'Spinocerebellar Ataxia (autosomal dominant)', short:'SCA', category:'Polyglutamine Disorder',
     sex:'any', ageMin:32, ageMax:55,
-    defect:'CAG repeat expansion in ATXN1/2/3 or CACNA1A/ATXN7 — polyglutamine toxicity, cerebellar Purkinje cell loss',
+    defect:'CAG repeat in ATXN1/2/3 or CACNA1A',
     inheritance:'Autosomal dominant trinucleotide (CAG) repeat expansion in one of several ATXN genes (or CACNA1A for SCA6); exhibits anticipation, more pronounced with paternal transmission',
     mechanism:'Polyglutamine (polyQ) gain-of-function similar to Huntington disease — expanded CAG tracts produce misfolded proteins that aggregate intraneuronally. Cerebellar Purkinje cells and inferior olivary neurons are most vulnerable. Extracerebellar features vary by subtype: pyramidal in SCA1, slow saccades in SCA2, ophthalmoplegia/dystonia in SCA3, pure cerebellar in SCA6, retinal degeneration in SCA7.',
-    diagnosticTest:'PCR sizing of CAG repeat panel (ATXN1, ATXN2, ATXN3, CACNA1A, ATXN7)',
+    diagnosticTest:'CAG repeat panel PCR',
     keyOrganism:'',
     organismOptions:[],
     keyCardiac:'',
     cardiacOptions:[],
-    keyComplication:'Cerebellar, brainstem, and olivary atrophy; "hot cross bun" pontine sign on MRI (SCA2/3)',
+    keyComplication:'Cerebellar and brainstem atrophy on MRI',
     complicationOptions:[
-      'Cerebellar, brainstem, and inferior olivary atrophy on neuroimaging',
-      'Caudate atrophy with ex vacuo frontal horn dilation on neuroimaging',
-      'Concentric hypertrophic cardiomyopathy on echocardiography',
-      'Bilateral posterior subcapsular iridescent cataracts on slit-lamp examination',
-      'Macroorchidism developing after the onset of puberty'
+      'Cerebellar and brainstem atrophy on MRI',
+      'Caudate atrophy on neuroimaging',
+      'Concentric hypertrophic cardiomyopathy',
+      'Bilateral posterior subcapsular cataracts',
+      'Macroorchidism'
     ],
     cc: () => rand([
       'middle-aged adult with progressive gait imbalance and slurred speech',

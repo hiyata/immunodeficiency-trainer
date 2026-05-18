@@ -1,37 +1,37 @@
 export const FALLBACK_DIAGNOSIS_MENDELIAN = [
-  { label:'Marfan syndrome (FBN1 mutation)', sub:'Connective tissue (AD)' },
-  { label:'Osteogenesis imperfecta (COL1A1/COL1A2 mutation)', sub:'Connective tissue (AD)' },
-  { label:'Loeys-Dietz syndrome (TGFBR1/2 mutation)', sub:'Connective tissue (AD)' },
-  { label:'Alpha-1 antitrypsin deficiency (SERPINA1 PI*ZZ)', sub:'Codominant' },
-  { label:'Primary ciliary dyskinesia (DNAH5/DNAI1 mutation)', sub:'Autosomal recessive' },
-  { label:'Shwachman-Diamond syndrome (SBDS mutation)', sub:'Autosomal recessive' },
-  { label:'Tay-Sachs disease (HEXA mutation)', sub:'Lysosomal storage' },
-  { label:'Niemann-Pick disease type A (SMPD1 mutation)', sub:'Lysosomal storage' },
-  { label:'Gaucher disease type 1 (GBA mutation)', sub:'Lysosomal storage' },
-  { label:'Fabry disease (GLA mutation)', sub:'Lysosomal storage (XLR)' },
-  { label:'Pompe disease (GAA mutation, GSD II)', sub:'Lysosomal storage' },
-  { label:'Hypermobile EDS (no identified gene)', sub:'Connective tissue (AD)' }
+  { label:'Marfan syndrome', sub:'Connective tissue' },
+  { label:'Osteogenesis imperfecta', sub:'Connective tissue' },
+  { label:'Loeys-Dietz syndrome', sub:'Connective tissue' },
+  { label:'Alpha-1 antitrypsin deficiency', sub:'Codominant' },
+  { label:'Primary ciliary dyskinesia', sub:'Autosomal recessive' },
+  { label:'Shwachman-Diamond syndrome', sub:'Autosomal recessive' },
+  { label:'Tay-Sachs disease', sub:'Lysosomal storage' },
+  { label:'Niemann-Pick disease type A', sub:'Lysosomal storage' },
+  { label:'Gaucher disease type 1', sub:'Lysosomal storage' },
+  { label:'Fabry disease', sub:'Lysosomal storage' },
+  { label:'Pompe disease', sub:'Lysosomal storage' },
+  { label:'Hypermobile EDS', sub:'Connective tissue' }
 ];
 export const FALLBACK_DEFECT_MENDELIAN = [
-  'FBN1 mutation producing defective fibrillin-1',
-  'COL1A1 or COL1A2 mutation producing defective type I collagen',
-  'TGFBR1 or TGFBR2 mutation impairing TGF-β signaling',
-  'SERPINA1 PI*ZZ misfolding mutation causing α1-antitrypsin deficiency',
-  'HEXA mutation causing β-hexosaminidase A deficiency',
-  'SMPD1 mutation causing acid sphingomyelinase deficiency',
-  'GBA mutation causing β-glucocerebrosidase deficiency',
-  'GLA mutation causing α-galactosidase A deficiency',
-  'GAA mutation causing acid α-glucosidase deficiency (Pompe)',
-  'Dynein-arm assembly defect from DNAH5 or DNAI1 mutation'
+  'FBN1 mutation',
+  'COL1A1 or COL1A2 mutation',
+  'TGFBR1 or TGFBR2 mutation',
+  'SERPINA1 PI*ZZ mutation',
+  'HEXA mutation',
+  'SMPD1 mutation',
+  'GBA mutation',
+  'GLA mutation',
+  'GAA mutation',
+  'DNAH5 or DNAI1 mutation'
 ];
 export const FALLBACK_TEST_MENDELIAN = [
-  'Echocardiography with aortic-root measurement (Z-score)',
-  'Serum and tissue β-hexosaminidase A enzyme activity',
-  'Bone marrow biopsy with Gaucher cell or foam cell identification',
-  'Serum α1-antitrypsin level with PI-type phenotyping',
-  'Skin-biopsy electron microscopy with collagen-fibril analysis',
+  'Echocardiography with aortic-root measurement',
+  'β-hexosaminidase A enzyme activity',
+  'Bone marrow biopsy',
+  'Serum α1-antitrypsin level',
+  'Collagen-fibril electron microscopy',
   'Plasma α-galactosidase A activity',
-  'Slit-lamp examination with dilation to evaluate for lens subluxation',
-  'High-resolution chest CT with mucociliary clearance scintigraphy',
-  'Newborn metabolic screen for hexosaminidase A activity'
+  'Slit-lamp examination',
+  'High-resolution chest CT',
+  'Newborn metabolic screen'
 ];
