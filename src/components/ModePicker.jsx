@@ -31,6 +31,16 @@ export function ModePicker({ onPick }) {
             </div>
             <div className="mt-4 mono text-xs uppercase tracking-widest" style={{color:'#1f1812'}}>Start →</div>
           </button>
+          <button onClick={()=>onPick('rbc')} className="panel rounded p-6 text-left transition opt"
+            style={{border:'2px solid rgba(31,24,18,0.25)', cursor:'pointer', background:'rgba(253,248,238,0.85)'}}>
+            <div className="mono text-xs uppercase tracking-widest mb-2" style={{color:'#8b2635'}}>Visual MCQ · 15 morphologies</div>
+            <div className="display text-3xl mb-2" style={{color:'#1f1812'}}>RBC Morphology</div>
+            <div className="text-sm leading-relaxed" style={{color:'#5a4a3a'}}>
+              Identify peripheral smear findings and their clinical associations.
+              Covers acanthocytes, echinocytes, schistocytes, sickle cells, target cells, inclusion bodies, and more.
+            </div>
+            <div className="mt-4 mono text-xs uppercase tracking-widest" style={{color:'#1f1812'}}>Start →</div>
+          </button>
         </div>
 
         <footer className="mt-16 pt-4 mono text-xs flex justify-between" style={{color:'#7a6a55', borderTop:'1px solid rgba(31,24,18,0.3)'}}>

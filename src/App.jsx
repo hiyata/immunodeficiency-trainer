@@ -6,6 +6,7 @@ import { ModePicker } from './components/ModePicker.jsx';
 import { Section } from './components/Section.jsx';
 import { Vital } from './components/Vital.jsx';
 import { LysosomalQuiz } from './components/LysosomalQuiz.jsx';
+import { RBCMorphologyQuiz } from './components/RBCMorphologyQuiz.jsx';
 
 // =========================================================================
 // GLOBAL STYLES
@@ -50,7 +51,7 @@ export default function App() {
     setRevealed(false);
     setScore({ right:0, wrong:0 });
     setShowRef(false);
-    if (id === 'lysosomal') { setRound(null); return; }
+    if (id === 'lysosomal' || id === 'rbc') { setRound(null); return; }
     const m = MODES.find(x => x.id === id);
     setRound(generateRound(m));
   };
@@ -78,6 +79,16 @@ export default function App() {
       <>
         {styles}
         <LysosomalQuiz onGoHome={goHome} />
+      </>
+    );
+  }
+
+  // RBC morphology quiz
+  if (modeId === 'rbc') {
+    return (
+      <>
+        {styles}
+        <RBCMorphologyQuiz onGoHome={goHome} />
       </>
     );
   }
