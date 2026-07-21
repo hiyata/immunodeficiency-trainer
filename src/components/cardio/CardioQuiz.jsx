@@ -218,12 +218,13 @@ export function CardioQuiz() {
             {currentQuestion.type === 'drug' ? (
               <div className="display text-lg mb-2" style={{ color: '#1f1812' }}>Which <em>drug</em> was added?</div>
             ) : (
-              <div className="display text-lg mb-2 flex items-center gap-2 flex-wrap" style={{ color: '#1f1812' }}>
-                Which ion channel/transporter was
+              <div className="display text-lg mb-2" style={{ color: '#1f1812' }}>
+                Which ion channel/transporter was{' '}
                 <span className="mono" style={{
                   fontSize: 11, padding: '2px 8px', borderRadius: 4, fontWeight: 700,
                   background: currentQuestion.modType === 'knockout' ? 'rgba(160,27,40,0.12)' : 'rgba(45,120,80,0.15)',
                   color: currentQuestion.modType === 'knockout' ? '#a01b28' : '#2d784e',
+                  whiteSpace: 'nowrap',
                 }}>{currentQuestion.modType === 'knockout' ? 'KNOCKED OUT' : 'INCREASED'}</span>?
               </div>
             )}
