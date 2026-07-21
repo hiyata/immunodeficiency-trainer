@@ -7,6 +7,7 @@ import { Section } from './components/Section.jsx';
 import { Vital } from './components/Vital.jsx';
 import { LysosomalQuiz } from './components/LysosomalQuiz.jsx';
 import { RBCMorphologyQuiz } from './components/RBCMorphologyQuiz.jsx';
+import { CardioPhysiology } from './components/CardioPhysiology.jsx';
 
 // =========================================================================
 // GLOBAL STYLES
@@ -51,7 +52,7 @@ export default function App() {
     setRevealed(false);
     setScore({ right:0, wrong:0 });
     setShowRef(false);
-    if (id === 'lysosomal' || id === 'rbc') { setRound(null); return; }
+    if (id === 'lysosomal' || id === 'rbc' || id === 'cardio') { setRound(null); return; }
     const m = MODES.find(x => x.id === id);
     setRound(generateRound(m));
   };
@@ -89,6 +90,16 @@ export default function App() {
       <>
         {styles}
         <RBCMorphologyQuiz onGoHome={goHome} />
+      </>
+    );
+  }
+
+  // Cardiac action potential / ECG sandbox
+  if (modeId === 'cardio') {
+    return (
+      <>
+        {styles}
+        <CardioPhysiology onGoHome={goHome} />
       </>
     );
   }

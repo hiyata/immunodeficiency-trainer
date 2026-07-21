@@ -41,6 +41,16 @@ export function ModePicker({ onPick }) {
             </div>
             <div className="mt-4 mono text-xs uppercase tracking-widest" style={{color:'#1f1812'}}>Start →</div>
           </button>
+          <button onClick={()=>onPick('cardio')} className="panel rounded p-6 text-left transition opt"
+            style={{border:'2px solid rgba(31,24,18,0.25)', cursor:'pointer', background:'rgba(253,248,238,0.85)'}}>
+            <div className="mono text-xs uppercase tracking-widest mb-2" style={{color:'#8b2635'}}>Sandbox · Explore + Quiz</div>
+            <div className="display text-3xl mb-2" style={{color:'#1f1812'}}>Cardiac Physiology</div>
+            <div className="text-sm leading-relaxed" style={{color:'#5a4a3a'}}>
+              Explore how ion channels, drugs, and pacing shape the cardiac action potential and ECG,
+              then quiz yourself on identifying channel and drug effects from the trace.
+            </div>
+            <div className="mt-4 mono text-xs uppercase tracking-widest" style={{color:'#1f1812'}}>Start →</div>
+          </button>
         </div>
 
         <footer className="mt-16 pt-4 mono text-xs flex justify-between" style={{color:'#7a6a55', borderTop:'1px solid rgba(31,24,18,0.3)'}}>
